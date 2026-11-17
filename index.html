@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOOD & CATERING | Filipino Catering Services</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffaf3;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #5b241c;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd89a;
+}
+
+.hero {
+    min-height: 430px;
+    background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=80");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d99a43;
+    color: #35170f;
+    padding: 12px 27px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #f1bd70;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: #5b241c;
+    font-size: 32px;
+}
+
+.section-title p {
+    color: #777;
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.package-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.10);
+    border: 1px solid #eee;
+}
+
+.package-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.package-one {
+    background-image: url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80");
+}
+
+.package-two {
+    background-image: url("https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80");
+}
+
+.package-content {
+    padding: 27px;
+}
+
+.package-label {
+    color: #b77a2c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.package-content h3 {
+    color: #5b241c;
+    font-size: 27px;
+    margin: 5px 0;
+}
+
+.service {
+    color: #9b6a32;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.package-content h4 {
+    color: #5b241c;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.package-content ul {
+    list-style: none;
+}
+
+.package-content li {
+    padding: 3px 0;
+}
+
+.package-content li::before {
+    content: "✓ ";
+    color: #b77a2c;
+    font-weight: bold;
+}
+
+.price {
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    color: #5b241c;
+}
+
+.booking {
+    background: #5b241c;
+    color: white;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #35170f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FOOD & CATERING</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#booking">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Make Every Celebration Special</h1>
+    <p>Delicious Filipino Food for Your Special Events.</p>
+    <a href="#packages" class="btn">Explore Packages</a>
+</section>
+
+<section id="packages">
+    <div class="section-title">
+        <h2>OUR CATERING PACKAGES</h2>
+        <p>Choose the perfect package for your celebration.</p>
+    </div>
+
+    <div class="packages">
+
+        <!-- PACKAGE 1 -->
+        <div class="package-card">
+            <div class="package-image package-one"></div>
+            <div class="package-content">
+                <span class="package-label">PACKAGE 1</span>
+                <h3>Budget Friendly</h3>
+                <p class="service">Seated Buffet Service</p>
+
+                <h4>Main Course</h4>
+                <ul>
+                    <li>Crispy Lumpia Shanghai</li>
+                    <li>Beef Kare-Kare</li>
+                    <li>Pork Menudo</li>
+                    <li>Sisig</li>
+                    <li>Fried Chicken</li>
+                    <li>Pancit Bihon</li>
+                </ul>
+
+                <h4>Dessert</h4>
+                <ul>
+                    <li>Ube Halaya</li>
+                </ul>
+
+                <h4>Beverages</h4>
+                <ul>
+                    <li>Water</li>
+                    <li>Fresh Buko Juice</li>
+                </ul>
+
+                <h4>Inclusions</h4>
+                <ul>
+                    <li>Host / Emcee</li>
+                    <li>Sound System</li>
+                    <li>Simple Fiesta Decor</li>
+                    <li>Centerpiece</li>
+                    <li>FREE Tarpaulin</li>
+                </ul>
+
+                <div class="price">Price: To be announced</div>
+            </div>
+        </div>
+
+        <!-- PACKAGE 2 -->
+        <div class="package-card">
+            <div class="package-image package-two"></div>
+            <div class="package-content">
+                <span class="package-label">PACKAGE 2</span>
+                <h3>Premium</h3>
+                <p class="service">Seated Buffet Service</p>
+
+                <h4>Main Course</h4>
+                <ul>
+                    <li>Tempura Platter</li>
+                    <li>Lechon Belly</li>
+                    <li>Buffalo Chicken Wings</li>
+                    <li>Bistek</li>
+                    <li>Fish Fillet</li>
+                    <li>Beef Broccoli</li>
+                    <li>Roasted Mixed Vegetables</li>
+                    <li>Truffle Mushroom Pasta</li>
+                </ul>
+
+                <h4>Desserts</h4>
+                <ul>
+                    <li>Halo-Halo</li>
+                    <li>Leche Flan</li>
+                </ul>
+
+                <h4>Beverages</h4>
+                <ul>
+                    <li>Water</li>
+                    <li>Soda</li>
+                    <li>Buko Pandan Juice</li>
+                </ul>
+
+                <h4>Inclusions</h4>
+                <ul>
+                    <li>Host / Emcee</li>
+                    <li>Sound System</li>
+                    <li>Complete Fiesta Decor</li>
+                    <li>FREE Tarpaulin</li>
+                </ul>
+
+                <div class="price">Price: To be announced</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="booking" id="booking">
+    <h2>BOOK YOUR EVENT</h2>
+    <p>Make your celebration memorable with FOOD & CATERING.</p>
+</section>
+
+<footer>
+    © 2026 FOOD & CATERING. All Rights Reserved.
+</footer>
+
+</body>
+</html>
